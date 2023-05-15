@@ -30,7 +30,7 @@ const getFulf = (state, { payload }) => {
 
 const deleteFulf = (state, { payload }) => {
   state.isLoading = false;
-  state.items = state.items.filter(({ id }) => id !== payload);
+  state.items = state.items.filter(({ id }) => id !== payload.id);
   state.error = '';
 };
 
